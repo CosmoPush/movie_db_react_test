@@ -1,0 +1,30 @@
+.unactive {
+    background-color: #e5e7eb;
+    color: #374151;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.unactive:hover{
+    background-color: #d1d5db;
+    transition: 0.3s;
+}
+.active {
+    background-color: plum;
+    color: white;
+}
+button:hover{
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+
+}
+.filterButton{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+}

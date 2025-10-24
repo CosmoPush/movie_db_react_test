@@ -1,0 +1,81 @@
+.login {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    padding: 2rem;
+    box-sizing: border-box;
+    gap: 50px;
+}
+
+.login a {
+    align-self: flex-start;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: 500;
+    transition: color 0.2s ;
+    margin-top: -100px;
+}
+
+.login a:hover {
+    color: lavender;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    gap: 1rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.loginForm div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.loginForm input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    background: lavender;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.loginForm input:focus {
+    border-color: lavender;
+}
+
+.loginForm button {
+    padding: 0.75rem;
+    background-color: plum;
+    width: 75%;
+    color: white;
+    align-self: center;
+    border: none;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.loginForm button:hover {
+    background-color: purple;
+}

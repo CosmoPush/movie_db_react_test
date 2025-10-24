@@ -1,0 +1,18 @@
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse; /* Зірки з права на ліво */
+}
+
+.star-rating__star {
+    cursor: pointer;
+    font-size: 24px;
+    color: #ddd; /* Сірий колір за замовчуванням */
+    transition: color 0.2s; /* Плавний перехід кольору */
+}
+
+.star-rating__star:hover,
+.star-rating__star.is-selected {
+    color: #ffd700; /* Жовтий колір при виборі/наведенні */
+}
+
+

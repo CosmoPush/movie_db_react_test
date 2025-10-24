@@ -1,0 +1,96 @@
+
+
+.movieListCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.filterButtonsActive {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.filterButtonsUnactive {
+    display: none;
+}
+
+.filters {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 250px; /* було 300–400px */
+}
+
+.filters:hover {
+    background-color: #d1d5db;
+    transform: scale(1.03);
+}
+
+.filters-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    max-width: 100%;
+}
+
+.pagesButtons {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    width: 240px;
+    height: 40px;
+}
+
+.pagesButtonsWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.movieList {
+    overflow-x: hidden;
+    padding-top: 70px;
+    background-image: url("/src/img/sakura.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100vw;
+}

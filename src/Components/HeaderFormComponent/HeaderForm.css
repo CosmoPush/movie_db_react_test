@@ -1,0 +1,63 @@
+.formHeader{
+    background-color:plum ;
+    color: cornflowerblue;
+    padding: 0.6rem 1rem;
+    border: 2px solid white;
+    border-radius: 999px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+    width: 100%;
+    max-width: 420px;
+    outline: none;
+    max-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+button img {
+    height: 15px;
+    width: 15px;
+    background-size: cover;
+}
+.formHeader:hover{
+    transition: 0.3s;
+    border:2px solid cornflowerblue;
+}
+
+.formHeader input{
+    background: plum;
+}
+.formHeader input:active{
+    background: plum;
+}
+.submitButton{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    background: lightpink;
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submitButton:hover{
+    background: palevioletred;
+}
+.formHeader input:valid{
+    background: plum;
+}.formHeader input:invalid{
+    background: plum;
+}
+.formHeader input{
+
+}
+
+input:valid,
+input:invalid {
+    border-color: initial;
+    box-shadow: none;
+}
