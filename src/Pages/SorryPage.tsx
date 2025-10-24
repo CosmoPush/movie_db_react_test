@@ -1,6 +1,7 @@
-import {SorryComponent} from "../Components/SorryComponent/SorryComponent.tsx";
+import { FC } from "react";
+import {SorryComponent} from "../Components/common";
 
-export const SorryPage = () => {
+export const SorryPage: FC = () => {
     return (
         <>
             <SorryComponent/>

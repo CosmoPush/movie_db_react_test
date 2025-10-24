@@ -1,9 +1,10 @@
-import {LoginComponent} from "../Components/LoginComponent/LoginComponent.tsx";
+import { FC } from "react";
+import { LoginComponent } from "../Components";
 
-export const LoginPage = () => {
-    return (
-        <div>
-            <LoginComponent/>
-        </div>
-    );
+export const LoginPage: FC = () => {
+  return (
+    <div>
+      <LoginComponent />
+    </div>
+  );
 };

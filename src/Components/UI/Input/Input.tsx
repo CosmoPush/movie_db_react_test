@@ -1,8 +1,8 @@
 import { FC, InputHTMLAttributes, forwardRef } from "react";
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-  label?: string;
-  error?: string;
+  label?: React.ReactNode;
+  error?: React.ReactNode;
   helperText?: string;
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
@@ -80,7 +80,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           )}
         </div>
 
-        {error && <p className="mt-1 text-sm text-red-400">{error}</p>}
+        {error && <div className="mt-2">{error}</div>}
 
         {helperText && !error && (
           <p className="mt-1 text-sm text-gray-400">{helperText}</p>

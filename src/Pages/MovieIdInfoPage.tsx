@@ -1,6 +1,7 @@
-import {MovieInfoComponent} from "../Components/MovieInfoComponent/MovieInfoComponent.tsx";
+import { FC } from "react";
+import {MovieInfoComponent} from "../Components/features";
 
-export const MovieIdInfoPage = () => {
+export const MovieIdInfoPage: FC = () => {
     return (
         <>
             <MovieInfoComponent/>

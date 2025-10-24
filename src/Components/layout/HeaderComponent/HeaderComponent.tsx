@@ -1,10 +1,10 @@
-import { HeaderFormComponent } from "../layout/HeaderFormComponent/HeaderFormComponent.tsx";
+import { FC } from "react";
+import { HeaderFormComponent, UserInfoComponent } from "../index.ts";
+import { Button } from "../../UI";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router";
-import { UserInfoComponent } from "../index.ts";
-import { Button } from "../UI";
 
-export const HeaderComponent = () => {
+export const HeaderComponent: FC = () => {
   const [loginAccess, setLoginAccess] = useState<number>(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const navigate = useNavigate();

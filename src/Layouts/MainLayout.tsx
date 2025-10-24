@@ -1,11 +1,12 @@
-import {Outlet} from "react-router";
-import {HeaderComponent} from "../Components/HeaderComponent/HeaderComponent.tsx";
+import { FC } from "react";
+import { Outlet } from "react-router";
+import { HeaderComponent } from "../Components";
 
-export const MainLayout = () => {
-    return (
-        <div>
-            <HeaderComponent/>
-            <Outlet/>
-        </div>
-    );
+export const MainLayout: FC = () => {
+  return (
+    <div>
+      <HeaderComponent />
+      <Outlet />
+    </div>
+  );
 };

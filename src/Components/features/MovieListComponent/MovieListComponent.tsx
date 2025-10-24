@@ -1,16 +1,15 @@
+import { FC } from "react";
 import { useEffect, useState } from "react";
-import { getMovies } from "../../services/getMovies.ts";
-import { IMovies } from "../../Models/IMovies.ts";
-import { MovieListCardComponent } from "../features/MovieListCardComponent/MovieListCardComponent.tsx";
-import { useAppDispatch, useAppSelector } from "../../redux/hooks/helpers";
-import { GenresFilterComponent } from "../features/GenresFilterComponent/GenresFilterComponent.tsx";
-import { genresNameActions } from "../../redux/slices/genreNameStoreSlice.ts";
-import { genresStoreSliceActions } from "../../redux/slices/genreStoreSlice.ts";
-import { pageActions } from "../../redux/slices/pageStoreSlice.ts";
-import { ErrorComponent } from "../common/ErrorComponent/ErrorComponent.tsx";
-import { PagesButtonComponent } from "../common/PagesButtonsComponent/PagesButtonComponent.tsx";
+import { getMovies } from "../../../services/getMovies.ts";
+import { IMovies } from "../../../Models/IMovies.ts";
+import { MovieListCardComponent, GenresFilterComponent } from "../index.ts";
+import { useAppDispatch, useAppSelector } from "../../../redux/hooks/helpers";
+import { genresNameActions } from "../../../redux/slices/genreNameStoreSlice.ts";
+import { genresStoreSliceActions } from "../../../redux/slices/genreStoreSlice.ts";
+import { pageActions } from "../../../redux/slices/pageStoreSlice.ts";
+import { ErrorComponent, PagesButtonComponent } from "../../common/index.ts";
 
-export const MovieListComponent = () => {
+export const MovieListComponent: FC = () => {
   const [movies, setMovies] = useState<IMovies[]>([]);
   const [filterButtonsState, setFilterButtonsState] = useState<string>(
     "filterButtonsActive"

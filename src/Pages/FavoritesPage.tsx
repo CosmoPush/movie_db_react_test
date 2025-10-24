@@ -1,11 +1,12 @@
+import { FC } from "react";
 import { useAppSelector, useAppDispatch } from "../redux/hooks/helpers";
 import { favoritesActions } from "../redux/slices/favoritesStoreSlice.ts";
-import { MovieListCardComponent } from "../Components/MovieListCardComponent/MovieListCardComponent.tsx";
-import { Link } from "react-router";
+import { MovieListCardComponent } from "../Components/features";
 import { Button, Card, Modal } from "../Components/UI";
+import { Link } from "react-router";
 import { useState } from "react";
 
-export const FavoritesPageComponent = () => {
+export const FavoritesPageComponent: FC = () => {
   const dispatch = useAppDispatch();
   const favorites = useAppSelector((state) => state.favoritesSlice.favorites);
   const [isClearModalOpen, setIsClearModalOpen] = useState(false);

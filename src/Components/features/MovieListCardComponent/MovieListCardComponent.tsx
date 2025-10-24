@@ -1,11 +1,12 @@
 import { FC, useEffect, useState } from "react";
-import { IMovies } from "../../Models/IMovies.ts";
-import { PosterPreviewComponent } from "../common/PosterPreviewComponent/PosterPreviewComponent.tsx";
-import { GeneralMovieInfoComponent } from "../common/GeneralMovieInfoComponent/GeneralMovieInfoComponent.tsx";
-import { getGenreById } from "../../utils/getGenreById.ts";
-import { GenresBadgeComponent } from "../features/GenreBadgeComponent/GenresBadgeComponent.tsx";
+import { IMovies } from "../../../Models/IMovies.ts";
+import {
+  PosterPreviewComponent,
+  GeneralMovieInfoComponent,
+} from "../../common";
+import { getGenreById } from "../../../utils/getGenreById.ts";
+import { GenresBadgeComponent, FavoriteButton } from "../index.ts";
 import { Link } from "react-router";
-import { FavoriteButton } from "../features/FavoriteButtonComponent/FavoriteButtonComponent.tsx";
 
 type movieProps = { movie: IMovies };
 

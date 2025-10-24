@@ -1,7 +1,7 @@
-import {MovieListComponent} from "../Components/MovieListComponent/MovieListComponent.tsx";
+import { FC } from "react";
+import {MovieListComponent} from "../Components/features";
 
-
-export const MoviesPage = () => {
+export const MoviesPage: FC = () => {
     return (
         <div>
             <MovieListComponent/>
